@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="strategic.css">
+</head>
+<body>
+    <p class="a"><i>Table 10.1. Technological coefficients of products, availability and machine<br>
+        costs</i></p>
+        <img class="a" src="../sai1/s1.png">
+        
+           
+            <p class="a"> b.&nbsp;&nbsp;the existing resources do not enable this relaxation, so as to include the
+                ideal solution in the restriction area, it is necessary to find a compromise
+                solution close to the ideal solution, respecting the original restriction area.
+                The formulation used in this case is called “global criterion” or the
+                weighting method used by Kinoshita (1996).</p>
+        </ol>
+        <p class="a">The difficulties in solving nonlinear problems occur even when the number of
+            variables is small. If the goal function is not linear, there may be the case of
+            optimization with several maximum and minimum points. In the case that one of
+            restriction equations (or all of them) is nonlinear, the area of feasible solutions
+            may be formed by nonconvex regions, and then optimization problem requires
+            heuristic algorithms. Usually, the optimization problem of great interest to
+            corporations is the optimization of nonlinear problems with multiple goals</p>
+            <p class="a">The best known methods for multiple criteria optimization problems are:</p>
+            <ul class="a">
+                <li>“Global criterion” method (Kinoshita ,1996),</li>
+                <li>“De Novo” programming (Tabucanon ,1988), and</li>
+                <li>Goal programming (Hillier & Liberman, 1980).</li>
+            </ul>
+            <p class="a">The first method builds a new goal function by weighting multiple goals functions
+                and preserving the area formed by the restrictions equations. The second
+                method relaxes (altering the restrictions equations) the restriction area so as to
+                hold an optimum solution called “ideal solution.” Goal programming tries to
+                reach a compromise establishing qualitative goals to address the demands of
+                the optimization problems</p>
+                <p class="a"><i>Example 10.2: Optimization Problem with Three Objective Functions<br>
+                    (Tabucanon, 1988)
+                    </i></p><hr class="a t"><br>
+                    <p class="a"> This example considers a machine shop with six machines producing three
+                        kinds of products. The time spent to produce each of the three products, the
+                        maximum time available and the cost of the use of each machine are shown in
+                        Table 10.1.</p>
+                        <p class="a">By using the data above one can formulate the following linear optimization with
+                            three goals, that is, maximization of the Profit obtained by the sale of the
+                            products, Product Quality and Worker Satisfaction.</p>
+                           <center> <img class=" w" src="../sai1/s2.png"></center>
+                           <P class="a"> where x<sub>1</sub>
+                            , x<sub>2</sub>
+                            and x<sub>3</sub>
+                            are the  quantities of Product 1, Product 2 and Product 3
+                            to be produced.</P>
+                            <p class="a"> By solving the linear programming problem referring to each goal function, the
+                                following solutions are given:</p>
+                                <center><img class="w" src="../sai1/s3.png"></center>
+                                <p class="a"> None of these three solutions maximizes all three goal functions at the same
+                                    time. Two ways of addressing this problem must now be examined.</p>
+                                    <p class="a"><i> “De Novo” Programming</i></p><hr class="a t"><br>
+                                    <p class="a"> This method reaches an “ideal solution” outside the area of feasible solutions,
+                                        enabling the existing restrictions on the initial cost of the machines to be relaxed.
+                                        Using the “De Novo” programming formulations, the ideal system for the total
+                                        production cost of $465,875 refers to z* = (z*<sub>1</sub>
+                                        = 10 916.813, z*<sub>2</sub>
+                                        = 18
+                                        257.933 , z*<sub>3</sub>
+                                        = 12 174.433). The ideal solution can be reached by solving the
+                                        following system of three linear equations (see details in Tabucanon (1988)) :</p>
+                                        
+                                        <p class="a"> z*<sub>1</sub>
+                                            : 50 x<sub>1</sub>
+                                            + 100 x<sub>2</sub>
+                                            + 17.5 x<sub>3</sub>
+                                            = 10 916.813 <br>
+                                                  z*<sub>2</sub>
+                                           : 92 x<sub>1</sub>
+                                            + 75 x<sub>2</sub>
+                                            + 50 x<sub>3</sub>
+                                            = 18 257.933<br>
+                                                  z*<sub>3</sub>
+                                           : 25 x<sub>1</sub>
+                                            + 100 x<sub>2</sub>
+                                            + 75 x<sub>3</sub>
+                                            = 12 174.433</p><br>
+                                            <p class="a"> The solution of this system is: x<sub>1</sub>
+                                                = 131.341, x<sub>2</sub>
+                                                = 29.683 and x<sub>3</sub>
+                                                = 78.976.<br>
+                                                Machine availability to reach this ideal solution, which is a nonfeasible solution
+                                                of the original problem, should be increased to the values presented on the
+                                                following table:</p>
+                                               <center> <table class="th " border="1px">
+                                                    <tr >
+                                                        <th >Machine</th>
+                                                        <th>Available</th>
+                                                        <th>Machine cost</th>
+                                                    </tr>
+                                                    <td height="30" >malli machine</td>
+                                                    <td>2080.703 hrs</td>
+                                                    <td>$75per hour</td>
+                                                    <tr >
+                                                        <td> Lathe </td>
+                                                        <td>1292.978.64</td>
+                                                        <td>60</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Grinder</td>
+                                                        <td>1184.64</td>
+                                                        <td>35</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jig saw</td>
+                                                        <td>2051.662</td>
+                                                        <td>50</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Drill press</td>
+                                                        <td>909.028</td>
+                                                        <td>115</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bnd saw</td>
+                                                        <td>1845.632</td>
+                                                        <td>65</td>
+                                                    </tr>
+                                                    
+                                                        
+                                                </table></center>
+                                                <p class="a"> Note that the total production cost of the ideal system is: 75 x 2080.703 + 60<br>
+                                                    · 1292.978 + 35 · 1184.64 + 50 · 2051.662 + 115 · 909.028 + 65 ·<br>
+                                                    1845.632 = $602,181.20. The new cost, when compared to the initial budget
+                                                    cost of $465,875, refers to an additional cost of $136,306.20.</p>
+                                                   <h3 class="a"> Global Criterion Method (Kinoshita, 1996)</h3><hr class="a t">
+                                                   <br>
+                                                   <p class="a">Let us suppose that no additional cost, besides the initial $465,875 is permitted.
+                                                    It is possible to distribute this value proportionally to the recommended
+                                                    capabilities and reach a solution that is close to the ideal. The steps of the global
+                                                    criterion method are:</p><br>
+                                                    <img class="a w"  src="../sai1/s5.png">
+                                                    <p class="a"> A new LP  problem can be solved using Simplex method:</p>
+                                                    <img class="a w"  src="../sai1/s6.png">
+                                                    <p class="a"> <i>Global Solution:</i><br> The optimum solution obtained by the Simplex method is: <br>
+                                                    <br> &nbsp; &nbsp;x<sub>1</sub>
+                                                    = 45.22,  x<sub>2</sub>
+                                                     = 49.61 and  x<sub>3</sub>
+                                                     = 43.52.</p><br>
+                                                     <p class="a"> This solution satisfies the individual goals functions as follows:<br><br>
+                                                        Profit:<br>
+                                                       &nbsp; z<sub>1</sub>
+                                                        = 7983.90  that  corresponds to 99% of  best Profit  z<sub>1</sub> 
+                                                       = 8041.1444.94;<br>
+                                                        Quality:<br>
+                                                       &nbsp; z<sub>2</sub>
+                                                        = 10057.38 that corresponds to  91%  of best Quality z<sub>2</sub>
+                                                       = 10950.59<br>
+                                                       &nbsp; and<br>
+                                                        Workers satisfaction:<br>
+                                                       &nbsp;z<sub>3</sub>
+                                                        = 9355.895 which is the same value previously obtained. This compro
+                                                       mise solution (x<sub>1</sub>
+                                                       &nbsp;= 45.22,  x<sub>2</sub>
+                                                        = 49.61,  x<sub>3</sub>
+                                                        = 43.52) can be considered as<br>
+                                                        &nbsp;an acceptable solution.<br>
+                                                    <br>
+                                                   <i> Example 10.3. Selecting the best route in a supply chain problem</i>
+                                                   
+                                                </p>
+                                                <img  class=" a w" src="../sai1/s7.png">
+                                              <center > <b class="b">Multi-Criteria or Multi-Objectives<br>
+                                                   &nbsp;&nbsp; &nbsp;&nbsp; Decision Analysis</b></center><hr class="a t" <br>
+                                                   <p class="a">In the optimal multi-criteria (or multi-objective) decision problems presented
+                                                    in the last section, both the objective and restriction equations are defined by
+                                                    linear functions, to make possible the use of the Simplex method of Linear
+                                                    Programming. Today’s management systems have become complex and are
+                                                    seldom evaluated in terms of quantitative linear components. Multi-criteria
+                                                    problems arise in the design, modeling, and planning of many complex systems
+                                                    in the areas of industrial production, urban transportation, energy production
+                                                    and distribution, health delivery, etc. These problems can be formulated and
+                                                    optimized using the quantitative approach of linear or nonlinear mathematical
+                                                    programming, but real-life decision problems involve many conflicting goals
+                                                    expressed by quantitative and/or qualitative criteria.</p><br>
+                                                    <p class="a">Possible routes R<sub>i</sub><br>
+                                                        R<sub>1</sub>
+                                                        : Company A Highway X1 City C City D Destination Z<br>
+                                                        R<sub>2</sub>
+                                                        : Company A Highway X2 City D Destination Z<br>
+                                                        R<sub>3</sub>
+                                                        : Company A Highway X3 City E City F Destination Z<br>
+                                                        R<sub>4</sub>
+                                                        : Company A Highway X4 City G City D Destination Z<br>
+                                                        R<sub>5</sub>
+                                                        : Company A Highway X5 City H City F Destination Z<br><br>
+                                                        Factors or Criteria Fi<br>
+                                                        F1: time spent on urban traffic between company A and the entrance to the highway;<br>
+                                                        F2:  average time on the highway;<br>
+                                                        F3: cost of fuel and tolls;<br>
+                                                        F4: number of inspections stations, plus average time waiting inspection or weighing;<br>
+                                                        F5: total average time from company A to town Z;<br>
+                                                        F6: highway’s comfort and safety level;<br><br>
+                                                        Information collected based on the average of the last six months are:<br><br>
+                                                    </p>
+                                                   <center> <table class="th" border="1px">
+                                                        <tr>
+                                                            <th></th>
+                                                            <th>R1</th>
+                                                            <th>R2</th>
+                                                            <th>R3</th>
+                                                            <th>R4</th>
+                                                            <th>R5</th>
+                                                        </tr>
+                                                        <td>F1</td>
+                                                        <td>190 minutes</td>
+                                                        <td>200</td>
+                                                        <td>210</td>
+                                                        <td>190</td><td>140</td>
+                                                        <tr>
+                                                            <td>F2</td>
+                                                        <td>600 minutes</td>
+                                                        <td>620</td>
+                                                        <td>650</td>
+                                                        <td>580</td><td>540</td>
+                                                        </tr>
+                                                        <tr>
+                                                        <td>f3</td>
+                                                        <td>$700</td>
+                                                        <td>$730</td>
+                                                        <td>$750</td>
+                                                        <td>$650</td><td>$700</td></tr>
+                                                        <tr>
+                                                            <td>f4<br>number of stations</td>
+                                                            <td>3</td>
+                                                            <td>2</td>
+                                                            <td>2</td>
+                                                            <td>3</td>
+                                                            <td>3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>f4<br>waiting time</td>
+                                                            <td>15 minutes</td>
+                                                            <td>15</td>
+                                                            <td>5</td>
+                                                            <td>20</td>
+                                                            <td>20</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>f5</td>
+                                                            <td>700 minutes</td>
+                                                            <td>790</td>
+                                                            <td>750</td>
+                                                            <td>760</td>
+                                                            <td>770</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>f6</td>
+                                                            <td>Bad</td>
+                                                            <td>Normal</td>
+                                                            <td>Bad</td>
+                                                            <td>Bad</td>
+                                                            <td>Good</td>
+                                                        </tr>
+
+                                                    </table></center>
+                                                    <p class="a"> We briefly describe the use of AHP (Analytic Hierarchy Process) to solve this
+                                                        problem. Other multi-objective decision methods, such as ELECTRE I and
+                                                        ELECTRE II, described by Goicoechea et al. (1982) and by Roy (1968), can solve
+                                                        this problem using a different approach.</p>
+                                                        <b class="a">The AHP Method</b><br>
+                                                        <p class="a"> AHP is a method for choosing the best decision alternative considering multiple
+                                                            criteria and goals expressed by qualitative or quantitative values. This method
+                                                            created by Saaty (1980) has been used for the decision problem to establish:
+                                                            priority definition, cost and profits assessment, resource deployment,
+                                                            benchmarking, market survey, strategic decisions, conflict negotiation and
+                                                            resolution, social or political decisions, and forecasts.</p>
+                                                          <p class="a"> The AHP is based on parity matrixes to express subjective assessment values
+                                                            attributed to variable pairs of each factor or criterion involved in the problem.
+                                                            AHP is a single-step decision process, which does not consider risk or
+                                                            uncertainty.</p>
+                                                            <p class="a"> Since manual calculation is difficult for decision problems with a large number
+                                                                of factors or alternatives (usually more than five criteria and five alternatives),
+                                                                an AHP software known as EXPERT CHOICE should be used. The descrip
+                                                               tion of AHP presented in this section is based on an alternative approximation
+                                                                method for calculation of the eigenvector to determine the relative priority
+                                                                vector, described by Cook and Russel (1993).</p>
+                                                            <p class="a">We do not present the entire sequence of numerical procedure for this problem,
+                                                                because of the subjective nature involved to define each one of the pairwise
+                                                                preference matrixes, and also because there is the need to reevaluate these</p>
+                                                                <i class="a"> Figure 10.3. Decision hierarchy of route selection problem</i>
+                                                             <center>   <table class="th" border="1px">
+                                                                    <tr class="th2">
+                                                                        <th>Leve1</th>
+                                                                        <th>Level2</th>
+                                                                        <th>Level3</th>
+                                                                    </tr>
+                                                                    <td>Goal</td>
+                                                                    <td>Decision criteria</td>
+                                                                    <td>Decision alternatives</td>
+                                                                    <tr>
+                                                                        <td colspan="3">&nbsp;</td>
+                                                                        
+                                                                        
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td><b>-></b>F1</td>
+                                                                        <td><b>-></b><b></b>(R<sub>1</sub>,R<sub>2</sub>,R<sub>3</sub>R<sub>4</sub>R<sub>5</sub>)</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td><b>-></b>F2</td>
+                                                                        <td><b>-></b><b></b>(R<sub>1</sub>,R<sub>2</sub>,R<sub>3</sub>R<sub>4</sub>R<sub>5</sub>)</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>select the best</td>
+                                                                        <td><b>-></b>F3</td>
+                                                                        <td><b>-></b><b></b>(R<sub>1</sub>,R<sub>2</sub>,R<sub>3</sub>R<sub>4</sub>R<sub>5</sub>)</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>rotate</td>
+                                                                        <td><b>-></b>F4</td>
+                                                                        <td><b>-></b><b></b>(R<sub>1</sub>,R<sub>2</sub>,R<sub>3</sub>R<sub>4</sub>R<sub>5</sub>)</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td><b>-></b>F5</td>
+                                                                        <td><b>-></b><b></b>(R<sub>1</sub>,R<sub>2</sub>,R<sub>3</sub>R<sub>4</sub>R<sub>5</sub>)</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td><b>-></b>F6</td>
+                                                                        <td><b>-></b><b></b>(R<sub>1</sub>,R<sub>2</sub>,R<sub>3</sub>R<sub>4</sub>R<sub>5</sub>)</td>
+                                                                    </tr>
+
+
+
+                                                                </table></center><br>
+                                                                <i class="a"><i> Table 10.1. AHP pairwise comparison scale (Saaty, 1980)</i><br>
+                                                                <center> <table class="th4" border="1px">
+                                                                    <tr>
+                                                                        <td>1-Equally Preferred</td>
+                                                                        <td>6-Strongly to very Strongly Preferred</td>
+                                                                    </tr> <tr>
+                                                                        <td>2-Equally to Moderately Preferred</td>
+                                                                        <td>7-Very Strongly Preferred</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>3-Moderatley Preferred</td>
+                                                                        <td>8-Very to Extremely Strongly Preferred</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>4-Moderatley to Strongly Preferred</td>
+                                                                        <td>9-Extremely Preferred</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>5-Strongly preferred</td>
+                                                                        <td></td>
+                                                                    </tr>
+
+
+
+
+
+
+                                                                    </table></center>
+   
+
+                                                                <p class="a"> matrixes according to the value of an index called a consistency ratio. Instead,
+                                                                    we present comments on some problems presented by the AHP method.</p>
+                                                                   <p class="a"> The AHP consists of the following four basic steps:</p>
+                                                                   <ol class="a" type="1">
+                                                                    <li>Develop the decision hierarchy of levels of decisions elements.</li>
+                                                                    <li>Collect preference data for each decision element by performing pairwise
+                                                                        comparisons.</li>
+                                                                    <li>Determine the relative priority or weight of each decision element using the
+                                                                        eigen-value method or alternative approximation method.</li>
+                                                                    <li>Aggregate the relative priorities of the final decision alternatives relative to
+                                                                        the overall goal.</li>
+
+                                                                   </ol>
+                                                                   <p class="a"><b>Step 1.</b> Decision hierarchy of the route Example 10.3 is shown in Figure 10.3.<br>
+                                                                   <b> Step 2.</b> Determining preferences by pairwise comparisons.<br><br>
+                                                                    The AHP uses a scale from 1 to 9 to rate the decision maker’s preference for
+                                                                    each pair of criteria in the hierarchy. Table 10.1 shows the pairwise comparison<br>
+                                                                    scale.</p>
+                                                                    <i class="a"> The Pairwise Comparison Matrix</i><hr class="a"><br><br>
+                                                                    <p class="a">The matrix FF below summarizes one of the decision maker’s preferences for
+                                                                        the six criteria relative to getting the best route. For instance, criterion F2 is
+                                                                        strongly preferred to criterion F1 and therefore creates a 5 in the F2 row
+                                                                        relative to the F1 column. This pairwise comparison also creates a 1/5 in the F1
+                                                                        row relative to the F2 column. Criterion F2 is equally preferred to F3, creating
+                                                                        1 in the F2 row relative to F3 column and vice-versa.</p>
+                                                                        <center>    <table class="th5" border="1px" >
+                                                                            <tr>
+                                                                                <td>FF</td>
+                                                                                <td>F1</td>
+                                                                                <td>F2</td>
+                                                                                <td>F3</td>
+                                                                                <td>F4</td>
+                                                                                <td>F5</td>
+                                                                                <TD>F6</TD>
+                                                                            </tr><tr>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>F1</td>
+                                                                                <td>1</td>
+                                                                                <td>1/5</td>
+                                                                                <td>1/3</td>
+                                                                                <td>1</td>
+                                                                                <td>1/7</td>
+                                                                                <td>1/4</td>
+                                                                            </tr><tr>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>F2</td>
+                                                                                <td>5</td>
+                                                                                <td>1</td>
+                                                                                <td>1</td>
+                                                                                <td>5</td>
+                                                                                <td>1/3</td>
+                                                                                <td>4</td>
+                                                                            </tr><tr>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>F3</td>
+                                                                                <td>3</td>
+                                                                                <td>1</td>
+                                                                                <td>1</td>
+                                                                                <td>3</td>
+                                                                                <td>1/3</td>
+                                                                                <td>2</td>
+                                                                            </tr><tr>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                            </tr><tr>
+                                                                                <td>F4</td>
+                                                                                <td>1</td>
+                                                                                <td>1/5</td>
+                                                                                <td>1/3</td>
+                                                                                <td>1</td>
+                                                                                <td>1/4</td>
+                                                                                <td>1</td>
+                                                                            </tr><tr>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                            </tr><tr>
+                                                                                <td>F5</td>
+                                                                                <td>7</td>
+                                                                                <td>3</td>
+                                                                                <td>3</td>
+                                                                                <td>4</td>
+                                                                                <td>1</td>
+                                                                                <td>3</td>
+                                                                            </tr><tr>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td></td>
+                                                                            </tr><tr>
+                                                                                <td>F6</td>
+                                                                                <td>4</td>
+                                                                                <td>1/4</td>
+                                                                                <td>1/2</td>
+                                                                                <td>1</td>
+                                                                                <td>1/4</td>
+                                                                                <td>1</td>
+                                                                            </tr><tr>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                            </tr><tr>
+                                                                                <td>Sum</td>
+                                                                                <td>21</td>
+                                                                                <td>5.65</td>
+                                                                                <td>6.17</td>
+                                                                                <td>15</td>
+                                                                                <td>2.31</td>
+                                                                                <td>11.2</td>
+                                                                            </tr><tr>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                            </tr>
+
+                                                                        </table></center>
+                                                                   <p class="a"> Next, a pairwise comparison matrix for the criterion F1, relative to each route
+                                                                    Ri is defined using the same comparison scale:</p>
+                                                                 <center>   <table  class="th7" border="1px">
+                                                                        <tr>
+                                                                            <td>Factor F1</td>
+                                                                            <td>R<sub>1</sub></td>
+                                                                            <td>R<sub>2</sub></td>
+                                                                            <td>R<sub>3</sub></td>
+                                                                            <td>R<sub>4</sub></td>
+                                                                            <td>R<sub>5</sub></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>R<sub>1</sub></td>
+                                                                            <td>1</td>
+                                                                            <td>1</td>
+                                                                            <td>1</td>
+                                                                            <td>1</td>
+                                                                            <td>1/5</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>R<sub>2</sub></td>
+                                                                            <td>1</td>
+                                                                            <td>1</td>
+                                                                            <td>1</td>
+                                                                            <td>1</td>
+                                                                            <td>1/5</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>R<sub>3</sub></td>
+                                                                            <td>1</td>
+                                                                            <td>1</td>
+                                                                            <td>1</td>
+                                                                            <td>1</td>
+                                                                            <td>1/5</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>R<sub>4</sub></td>
+                                                                            <td>1</td>
+                                                                            <td>1</td>
+                                                                            <td>1</td>
+                                                                            <td>1</td>
+                                                                            <td>1/5</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>R<sub>5</sub></td>
+                                                                            <td>5</td>
+                                                                            <td>5</td>
+                                                                            <td>5</td>
+                                                                            <td>5</td>
+                                                                            <td>1</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>sums</td>
+                                                                            <td>9</td><td>9</td>
+                                                                            <td>9</td><td>9</td>
+                                                                            <td>9/5</td>
+                                                                        </tr>
+                                                                        
+
+
+                                                                    </table></center>
+                                                                    <p class="a"> This matrix shows that, concerning criterion F1 (time spent on urban traffic),
+                                                                        route R5 is <i>strongly preferred</i> to all others routes, creating values of 5 in the
+                                                                        row relative to R5.</p>
+                                                                        <p class="a">The other five pairwise comparison matrices should be defined for each one of
+                                                                            the remaining criteria F2, F3, ...., F6.</p>
+                                                                            <p class="a"> <b>Step 3.</b> Using the eigen-value method of the software EXPERT CHOICE or
+                                                                                the alternative approximation method described by Cook and Russel (1993),
+                                                                                it is possible to determine the relative priority or weight of each decision
+                                                                                element</p><br>
+                                                                                <p class="a"> For instance, considering the pairwise matrix FF, we divide each matrix entry
+                                                                                    by its column total to normalize these values. Then we calculate the arithmetic
+                                                                                    mean of each row. These arithmetic means are estimates of the relative
+                                                                                    priorities (eigenvalues) of the six factors Fi, as shown in the following:</p>
+                                                                                    <center><table  class="th8" border="1px" >
+                                                                                        <tr>
+                                                                                            <td>FF</td>
+                                                                                            <td>F1</td>
+                                                                                            <td>F2</td>
+                                                                                            <td>F3</td>
+                                                                                            <td>F4</td>
+                                                                                            <td>F5</td>
+                                                                                            <td>F6</td>
+                                                                                            <td>Row Mean</td>
+
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>F1</td>
+                                                                                            <td>.048</td>
+                                                                                            <td>.035</td>
+                                                                                            <td>.054</td>
+                                                                                            <td>.067</td>
+                                                                                            <td>.062</td>
+                                                                                            <td>.022</td>
+                                                                                            <td>0.048</td>
+
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>F2</td>
+                                                                                            <td>.238</td>
+                                                                                            <td>.178</td>
+                                                                                            <td>.162</td>
+                                                                                            <td>.333</td>
+                                                                                            <td>.144</td>
+                                                                                            <td>.355</td>
+                                                                                            <td>0.235</td>
+
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>F3</td>
+                                                                                            <td>.143</td>
+                                                                                            <td>.178</td>
+                                                                                            <td>.162</td>
+                                                                                            <td>.200</td>
+                                                                                            <td>.144</td>
+                                                                                            <td>.178</td>
+                                                                                            <td>0.167</td>
+
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>F4</td>
+                                                                                            <td>.048</td>
+                                                                                            <td>.035</td>
+                                                                                            <td>.054</td>
+                                                                                            <td>.067</td>
+                                                                                            <td>.108</td>
+                                                                                            <td>.089</td>
+                                                                                            <td>0.067</td>
+
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>F5</td>
+                                                                                            <td>.333</td>
+                                                                                            <td>.532</td>
+                                                                                            <td>.487</td>
+                                                                                            <td>.266</td>
+                                                                                            <td>.434</td>
+                                                                                            <td>.267</td>
+                                                                                            <td>0.387</td>
+
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>F6</td>
+                                                                                            <td>.190</td>
+                                                                                            <td>.042</td>
+                                                                                            <td>.081</td>
+                                                                                            <td>.067</td>
+                                                                                            <td>.108</td>
+                                                                                            <td>.089</td>
+                                                                                            <td>0.096</td>
+
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>Total</td>
+                                                                                            <td>1</td>
+                                                                                            <td>1</td>
+                                                                                            <td>1</td>
+                                                                                            <td>1</td>
+                                                                                            <td>1</td>
+                                                                                            <td>1</td>
+                                                                                            <td>1.000</td>
+
+                                                                                        </tr>
+
+                                                                                    </table></center>
+                                                                                
+                                                                                    <p class="a"> These relative priorities indicate that the decision maker places most emphasis
+                                                                                        on criterion F5 (priority = 0.367) fallowed by priority F2 (priority 0.235).<br>
+                                                                                        We must repeat this procedure for the six pairwise comparison matrix of each
+                                                                                        criterion Firelative to the routes Ri, to follow to step 4.<br><br>
+                                                                                       <b> Step 4.</b> Aggregating the relative priorities of the final decision alternatives
+                                                                                        relative to the overall goal.<br><br>
+                                                                                        For instance, the final decision priority value could be:<br>
+                                                                                        Route 1 = 0.193, Route 2 = 0.188, Route 3 = 0.155. Route 4 = 0.230, and<br>
+                                                                                        Route 5 = 0.234; , which indicates that  route number 5 and number 4 are the
+                                                                                       &nbsp; &nbsp; &nbsp; best alternatives.<br><br>
+                                                                                        The quality of the final decision is dependent upon the consistency of the
+                                                                                        judgement throughout the pairwise comparison process. A measure of consis
+                                                                                       tency calledconsistency ratio is used to determine the decision-maker
+                                                                                        consistency after the development of each pairwise comparison matrix. If the
+                                                                                       </p>
+                                                                                       <p class="a"> consistency ratio is large, the decision maker should revise the pairwise
+                                                                                        comparison matrix. The decision maker can also revise the subjective judgment
+                                                                                        giving more preference to one of the criteria or one of the objectives.
+                                                                                        This revisions procedure may introduce changes in the final priority. For
+                                                                                        instance, for a different pairwise comparison values, the priority could be:
+                                                                                        Route 1 = 0.182, Route 2 = 0.108,  Route 3 = 0.171. Route 4 = 0.369, and
+                                                                                        Route 5 = 0.170. According to the new decision preference, route number 4
+                                                                                        becomes the preferred alternative.</p>
+                                                                                       <p class="a"> AHP is one of the most used methods for making decisions with multiple criteria
+                                                                                        involving complexity and subjectivity. One of the difficulties pointed out for the
+                                                                                        AHP is the amount of required parity comparisons, which increase rapidly with
+                                                                                        the number of criteria depending on the complexity of the decision tree. The
+                                                                                        reversal effect of the priority order, which occurs when the dominant alterna
+                                                                                       tives are altered due to the inclusion or exclusion of irrelevant alternatives, is
+                                                                                        another problem pointed to by AHP critics (Harker, 1987). The order reversal
+                                                                                        effect is attributed by researchers as a “side effect” of the calculus used to
+                                                                                        normalize the priority vector. In response to this problem, Saaty (1977 &
+                                                                                        1980) created the “ideal mode” calculation, indicated for the case when only
+                                                                                        the best alternative is desired.</p>
+                                                                                       <p class="a"> The ANP —<i>Analytic Network Process</i> (Saaty, 2001) is a generalization of
+                                                                                        AHP where one of the axioms (independency of the factors) may be relaxed.
+                                                                                        While AHP hierarchic structure has a concept of dominance of one level over
+                                                                                        another, in ANP there may be closed cycles where there is a net structure that
+                                                                                        can give a new dimension and view for structuring complex problems.</p></body>
+                                                                                        <center><b class="b"> Decision Based on Fuzzy<br>
+                                                                                            Possibility Theory</b></center><hr class=" a t"><br>
+                                                                                            <p class="a"> In decision problems involving uncertainty or risk, classical probability theory
+                                                                                                (also known as Bayesian probability) defines probabilities pi (pi >=0 andS pi
+                                                                                                = 1) in such a way that, if the probability P(A) of a subset A Ì S is known, the
+                                                                                                probability of the complementary sub set Ac , is  defined by P(Ac) = 1 – P(A),
+                                                                                                meaning that the decision maker must know the value of this probability. As in
+                                                                                                a practical problem with uncertainty or risk this fact is seldom possible, authors
+                                                                                                (Shafer, 1978; Terano et al., 1984) recommend the use of fuzzy possibility
+                                                                                                theory, in which this restriction may be relaxed.</p>
+                                                                                                <p class="a"> Let S= { sj } be a finite set of criteria formed by  subsets Ai (i = 1,2,...) defined
+                                                                                                    by probabilities m(Ai), known as basic probabilities of Ai, such that  0 <
+                                                                                                    m(Ai) < 1, m(j) = 0 and S m(Ai) = 1 , (for all Ai Ì S and  i = 1, 2, ...).</p>
+                                                                                                    <p class="a">Following definitions occurs:<br>
+                                                                                                        a.&nbsp;
+                                                                                                        Lower Probability or Belief Function (Bel):
+                                                                                                        P* (Ai) =S m(Aj)  , (for  Aj˝ Ai), is the sum of all basic probabilities of subsets
+                                                                                                        of Ai,   and<br><br><br>
+                                                                                                        b.&nbsp;
+                                                                                                        Upper Probability or Plausibility Function (Pel):<br><br>
+                                                                                                        P* (Ai) = 1 – P*
+                                                                                                        (Aic) = 1 -&nbsp; S m(Aj<sup>c</sup>) , (for  Aj<sup>c</sup> ˝ A<sup>i</sup>), is the sum of basic
+                                                                                                        probabilities of subsets Aj containing or related to set Ai, i.é, Aj ˙ Ai <br><br>
+                                                                                                        In decision problems defined by k criteriasj of S, n alternatives of decisions rl
+                                                                                                        and basic probabilities m (Ai) (for all Ai˝S ={ sj }), using the utility values  u(rl
+                                                                                                        ,
+                                                                                                        sj) , for each alternative rl
+                                                                                                        and criterion sj,  it is possible to define two expected
+                                                                                                        values with respect to Bel and Pel probabilities.<br><br>
+                                                                                                        If sj (j= 1,2,...,k) are ordered according to the importance given by  the decision
+                                                                                                        maker, we can consider weights  wj such that (wo = 0) < w1 < w2 < ...< (wk
+                                                                                                        = 1) and define subsets Aq
+                                                                                                        = { sj / wj ³ wq
+                                                                                                        }, q= 1,2,...,k, such that m(sq
+                                                                                                        ) = wq– wq-1
+                                                                                                        . Then,<br><br>
+                                                                                                        Lower Expected Value E* of alternative rl (l = 1,2,..., n)<br>
+                                                                                                       &nbsp;&nbsp; E*[ rl ] = å min (Aj)) x m(sj) , and
+                                                                                                        Upper Expected Value E* of alternative rl (l = 1,2,…, n)<br>
+                                                                                                        &nbsp;&nbsp;E*[ rl ] = å max (Aj) x  m(sj)</p>
+                                                                                                        <i class="a"> Example 10.4: Selection of Used Car</i><hr class="a"><br><br>
+                                                                                                        <p class="a"> (Presented in Chapter VIII as Example 8.4 to illustrate an ambiguous model of
+                                                                                                            decision).</p>
+                                                                                                            <p class="a"> According to the description presented in Chapter VIII, we have the following
+                                                                                                                five criteria, placed in ascending order of their importance.<br><br>
+                                                                                                                OI ={ s1 = year of fabrication, s2 = exterior aspects, s3 = interior aspects, s4
+                                                                                                                = mileage , s5 = price },<br><br>
+                                                                                                                and a list of preference weight m(sj) or mj for each criterion<br><br>
+                                                                                                                P1 = { m1 = 0.075, m2 = 0.139, m3 = 0.026, m4 = 0.460, m5 = 0.294 }.<br><br>
+                                                                                                              <p class="a">  The criterion s5 is the “most important” because when states or criteria sj (j=
+                                                                                                                1,2,...,k) are ordered defining subsets Aq
+                                                                                                                = { sj / wj ‡ wq
+                                                                                                                }, q= 1,2,...,k, the
+                                                                                                                last criterion s5 appears in every subset Aq, in order to evaluate the values of
+                                                                                                                lower and upper expected values. The criterion s4 is the “most preferred”
+                                                                                                                because the preference decision maker has resulted in the highest value of basic
+                                                                                                                probability m4 = 0.460.</p>
+                                                                                                               <p class="a"> The values of utility function u (rl, sj), for l = 1, 2, ..., 6 used cars and sj =
+                                                                                                                1,2,...,5 criteria are  presented in Table 10.2.</p>
+                                                                                                              <p class="a">  We can note that, with the exception of car number X768, every car presents
+                                                                                                                at least one positive aspect (i.e., preference value is equal to or greater than 0.7)
+                                                                                                                showing that we have not the occurrence of dominance factor to eliminate some
+                                                                                                                of these cars.</p>
+                                                                                                               <p class="a"> For instance, for car M718 we have, we can define the subsets:<br><br>
+                                                                                                              &nbsp;&nbsp;  A1
+                                                                                                                = { s1,
+                                                                                                                s2,
+                                                                                                                s3,
+                                                                                                                , s4, 
+                                                                                                               s5 
+                                                                                                               } = { 0.4, 0.3, 0.4, 0.6, 0.8} with min (A1) = 0.3<br>
+                                                                                                                &nbsp;and max (A1)= 0.8</p>
+                                                                                                                <br><br>
+                                                                                                                <i class="a"> Table 10.2. Utility values for six used cars (adapted from Terano et al.,
+                                                                                                                    1984)</i><br><br>
+                                                                                                               <center> <table class="th10" border="1px">
+                                                                                                                    <tr>
+                                                                                                                        <td>Car code</td>
+                                                                                                                        <td>s1=year</td>
+                                                                                                                        <td>s2=exterior</td>
+                                                                                                                        <td>s3=interior</td>
+                                                                                                                        <td>s4=mileage</td>
+                                                                                                                        <td>s5=price</td>
+                                                                                                                    </tr>
+                                                                                                                    <tr>
+                                                                                                                        <td>M718</td>
+                                                                                                                        <td>0.4</td>
+                                                                                                                        <td>0.3</td>
+                                                                                                                        <td>0.4</td>
+                                                                                                                        <td>0.6</td>
+                                                                                                                        <td>0.8</td>
+                                                                                                                    </tr>
+                                                                                                                    <tr>
+                                                                                                                        <td>B738</td>
+                                                                                                                        <td>0.9</td>
+                                                                                                                        <td>0.0</td>
+                                                                                                                        <td>0.5</td>
+                                                                                                                        <td>0.2</td>
+                                                                                                                        <td>0.8</td>
+                                                                                                                    </tr>
+                                                                                                                    <tr>
+                                                                                                                        <td>X768</td>
+                                                                                                                        <td>0.0</td>
+                                                                                                                        <td>0.0</td>
+                                                                                                                        <td>0.4</td>
+                                                                                                                        <td>0.4</td>
+                                                                                                                        <td>0.0</td>
+                                                                                                                    </tr>
+                                                                                                                    <tr>
+                                                                                                                        <td>X768</td>
+                                                                                                                        <td>0.0</td>
+                                                                                                                        <td>0.7</td>
+                                                                                                                        <td>0.9</td>
+                                                                                                                        <td>0.9</td>
+                                                                                                                        <td>0.0</td>
+                                                                                                                    </tr>
+                                                                                                                    <tr>
+                                                                                                                        <td>Z780</td>
+                                                                                                                        <td>0.0</td>
+                                                                                                                        <td>0.7</td>
+                                                                                                                        <td>0.9</td>
+                                                                                                                        <td>0.9</td>
+                                                                                                                        <td>0.0</td>
+                                                                                                                    </tr>
+                                                                                                                    <tr>
+                                                                                                                        <td>A783</td>
+                                                                                                                        <td>0.8</td>
+                                                                                                                        <td>0.0</td>
+                                                                                                                        <td>0.8</td>
+                                                                                                                        <td>0.6</td>
+                                                                                                                        <td>0.5</td>
+                                                                                                                    </tr>
+                                                                                                                    <tr>
+                                                                                                                        <td>X785</td>
+                                                                                                                        <td>0.5</td>
+                                                                                                                        <td>0.3</td>
+                                                                                                                        <td>0.8</td>
+                                                                                                                        <td>0.9</td>
+                                                                                                                        <td>0.5</td>
+                                                                                                                    </tr>
+
+
+                                                                                                                </table> </center><br>
+                                                                                                                <img class="a k"  src="../sai1/s8.png">
+                                                                                                                <img class="a k" src="../sai1/s9.png">
+                                                                                                                <p class="a"> Other values of upper, lower expected values and arithmetic mean  Eadd
+                                                                                                                    are
+                                                                                                                    obtained in a similar way (Table 10.3).</p>
+                                                                                                                    <i class="a"> Comments</i><hr class="a"><br><br>
+                                                                                                                    <p class="a"> Car A783 seems to be the best choice, showing two first places and one second
+                                                                                                                        place, although it has a score of zero for the “exterior aspects.” However, as
+                                                                                                                        this criterion s2 is one of the least important criteria, it could not affect this
+                                                                                                                        customer’s selection.</p>
+                                                                                                                     <p class="a">   Car M718 presents a balanced situation: it is the best car with respect to
+                                                                                                                        negative points (E<sub>lower</sub>
+                                                                                                                        or E*
+                                                                                                                        ) and has slightly lower value with respect to the
+                                                                                                                        arithmetic mean and positive points (E<sub>upper</sub>
+                                                                                                                        = E* = 0.800), when compared with
+                                                                                                                        car A783. Car A783 has two first places, but it has a zero entry for the criterion
+                                                                                                                        s2. That, however, is one of the less important criteria.</p>
+                                                                                                                        <p class="a"> Car X785 presents more negative points (E<sub>lower</sub>
+                                                                                                                        = 0.457) and less positive
+                                                                                                                        points (E<sub>upper</sub>
+                                                                                                                        =   0.782) than the two cars previously considered. As it would
+                                                                                                                        be expected, car X768 presents the worst performance in every aspect of
+                                                                                                                        analysis.</p>
+                                                                                                                        <center><b class="x"> Case Studies: Strategy and<br>
+                                                                                                                            Decisions in Perspective</b></center><hr class="a t"><br>
+                                                                                                                            <b class="a"> Case – The Value of Scenarios</b><hr class="a">
+                                                                                                                            <p class="a"> (Excerpted from: <i>The Official Future, Self-Delusion and the Value Of
+                                                                                                                                Scenarios</i>;Peter Schwartz,Financial Times, Mastering Risk, series,  Part II,
+                                                                                                                                May 2, 2000, pp. 6-7).</p>
+                                                                                                                                &nbsp;&nbsp;&nbsp; <p class="a l"><i> “Intelligent people and companies still make some very bad
+                                                                                                                                    decisions…. IBM and the retail giant Sears Roebuck lost several
+                                                                                                                                    billion dollars betting on one on-line provider; American banks
+                                                                                                                                    lost money and more money with the successive crises in Latin
+                                                                                                                                    American;countries during the nineteen eighties; Long Term
+                                                                                                                                    Capital Management (LTCM) lost billions in 1996 read more on</i></p>
+                                                                
+                                                    
+                                                        
+                                                   
+                                                       
+                                                        
+
+
+    
+</body>
+</html>
